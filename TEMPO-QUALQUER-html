@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMA HORA QUALQUER</title>
+    <link rel="icon" type="png" href="https://cdn-icons-png.flaticon.com/512/151/151770.png">
+ 
+ <style>
+        body{
+            background-color: rgb(182, 180, 180);
+        }
+    </style>
+
+</head>
+<body> 
+    <h1>MAIS UMA HORA</h1>  
+
+    <p id="TROCA">Olá tudo bem ?</p>
+    
+    <button type="button"
+onclick='document.getElementById("TROCA").innerHTML = "Que bom !"'> Sim</button>
+<br><br>
+
+    <p>Qual Clima está ?</p>
+<button onclick="document.getElementById('lampada').src='https://img.freepik.com/icones-gratis/sol_318-178494.jpg'">
+    Sol</button>
+    
+    <button onclick="document.getElementById('lampada').src='https://cdn-icons-png.flaticon.com/512/6393/6393367.png'">
+        Lua</button>
+        
+    <button onclick="document.getElementById('lampada').src='https://cdn-icons-png.flaticon.com/512/414/414864.png'">
+            Chuvendo</button>
+
+            <button onclick="document.getElementById('lampada').src='https://icones.pro/wp-content/uploads/2021/04/icone-de-nuage-gris.png'">
+                Nublado</button>
+                <br><br>
+
+    <img id="lampada" src="https://img.freepik.com/icones-gratis/sol_318-178494.jpg" style="width:100px">
+    <br><br>
+    
+<P id="texto">Gostando do Clima ?</p>
+
+    <button type="button"
+onclick="document.getElementById('texto').style.display='none'">
+    Aperte Aqui Se Sim</button>
+
+    <P id="soma"></P><br>
+
+    <button onclick="window.print()">Imprima essa página</button><br><br>
+
+    
+    <p id="saudaçao4"></p>
+ 
+    <p id="minhaFuncao"></p>
+
+
+    <script
+    
+    var x = minhaFuncao(4, 3); // A função é chamada, o valor de retorno terminará em x
+    function minhaFuncao(num1, num2) {
+    return num1 * num2; // A função retorna o produto de num1 e num2
+    }
+      
+
+        >document.getElementById("soma").innerHTML = 20 * 2; 
+
+        window.alert(20 * 2)
+
+        console.log(20 * 2);
+
+        document.write('20 * 2: ', 20 * 2);
+
+        var saudaçao;
+        var hora = new Date().getHours();
+
+        if(hora < 9) {
+            saudaçao = "Hora do café da manha"
+        } else if (hora < 13) {
+            saudaçao = "Hora do Almoço" 
+        } else if (hora < 18) {
+            saudaçao = "Hora do Café da Tarde"
+        } else if (hora < 0) {
+            saudaçao = "Hora da Jantar"
+        }
+        document.getElementById("saudaçao4").innerHTML = saudaçao;
+
+     </script>
+
+
+</body> 
+</html>
